@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galoria</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="hero-login">
+                <nav>
+                    <a href="homePage.html"><img src="./images/art_website_logo.png" class="logo"></a>
+                    <ul>
+                        <li><a href="homePage.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="artistLoginPage.html">Artist Login</a></li>
+                        <li><a href="artistPage.html">Artist Page</a></li>
+                    </ul>
+                    <button><a href="searchPage.html">Search</a></button>
+                </nav>
+            </div>
+        </header>
+        <div class="form-popup">
+            <div class="form-box login">
+                <div class="form-details">
+                    <h1>Welcome Back</h1>
+                    <p>Please login to your account with us.</p>
+                </div>
+                <div class="form-content">
+                    <h1>Login</h1>
+                    <form action="artistPage.html">
+                        <div class="input-field">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-field">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <a href="passwordRecovery.html" class="forgot-pass">Forgot Password?</a>
+                        <button type="submit">Login</button>
+                        <div class="create-account-link">
+                            <p>Don't have an account?</p>
+                            <p><a href="createProfile.html">Create an Artist Account</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

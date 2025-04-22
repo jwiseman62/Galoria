@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+/********* Sections For All Pages *********/
+
+/* Home Page */
+.hero-main {
+    min-height: 100dvh;
+    background-image: url(./images/whale-at-home-illustration.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* About Page */
+.hero-about {
+    min-height: 100dvh;
+    background: url(./images/starynight.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Create Profile Page */
+.hero-createProfile {
+    min-height: 100dvh;
+    background: url(./images/code.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Gallery Page */
+.hero-gallery {
+    min-height: 100dvh;
+    background: url(./images/whale-at-home-illustration.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Login Page */
+.hero-login {
+    min-height: 100dvh;
+    background: url(./images/code.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Search Page */
+.hero-search {
+    min-height: 100dvh;
+    background: url(./images/code.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Artist Page */
+.hero-artist {
+    min-height: 100dvh;
+    background: url(./images/Tokenization-image-1-gID_7.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Password Recovery Page */
+.hero-passwordRecovery {
+    min-height: 100dvh;
+    background: url(./images/code.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Search Results Page */
+.hero-searchResults {
+    min-height: 100dvh;
+    background: url(./images/code.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/********* NAVIGATION CONTROLS *********/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 98%;
+    margin: auto;
+    padding: 15px 0;
+    border-bottom: 3px solid #fff;
+}
+
+.logo {
+    width: 130px;
+    filter: drop-shadow(0 0 10px #479e);
+    transition: .4s;
+}
+
+.logo:hover {
+    transform: translateX(20px);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #479eca;
+    font-weight: 600;
+    border-bottom: 2px solid deepskyblue;
+}
+
+nav button {
+    padding: 12px 35px;
+    border: none;
+    border-radius: 2rem;
+    background: #479eca;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1s;
+}
+
+nav button:hover {
+    scale: .9;
+}
+/********* CONTENT FOR MAIN AND ABOUT PAGEES *********/
+.content {
+    position: absolute;
+    color: #fff;
+    top: 37%;
+    left: 90px;
+}
+
+.content h2 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+.content h2 span {
+    color: yellow;
+}
+
+.content p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.content button {
+    margin-top: 50px;
+    padding: 12px 45px;
+    border: none;
+    border-radius: 2rem;
+    background: deepskyblue;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.content button:hover {
+    scale: .9;
+}
+
+/******** FORM BOX ********/
+
+/* Form Box */
+.form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;
+    width: 100%;
+    background: #fff;
+    border: 2px solid #fff;
+    transform: translate(-50%, -50%);
+}
+
+.form-popup .form-box {
+    display: flex;
+}
+
+/* Form Details*/
+.form-box .form-details {
+    max-width: 330px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-box p {
+    text-align: center;
+    color: black;
+}
+
+.form-box .form-content {
+    width: 100%;
+    padding: 35px;
+}
+
+/* Form Inputs */
+form .input-field {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+form .input-field input {
+    width: 50%;
+    height: 200%;
+    outline: none;
+    padding: 0px;
+    font-size: 0.95rem;
+    border-radius: 3px;
+    border: 1px solid #717171;
+}
+
+.input-field input:focus {
+    border-color: #717171;
+}
+
+/*
+.input-field input:is(:focus, :valid) {
+    padding: 16px 15px 0;
+}
+*/
+
+form .input-field label {
+    position: relative;
+    top: 50%;
+    left: 15px;
+    color: #717171;
+    pointer-events: none;
+    transform: translate(-50%);
+    transition: 0.2s ease;
+}
+
+.input-field input::is(:focus, :valid) ~ label {
+    color: #717171;
+    font-size: 0.75rem;
+    transform: translateY(-120%);
+}
+
+.form-box a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.form-box a:hover {
+    text-decoration: underline;
+}
+
+.form-box .forgot-pass {
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 0.95rem;
+}
+
+form button {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 0;
+    border-radius: 3px;
+    margin: 25px 0;
+    color: #fff;
+    cursor: pointer;
+    background: #00bcd4;
+}
+
+form button:hover {
+    background: #0097a7;
+}
+
+.form-box :where(.forgot-pass, .policy-text) {
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 0.95rem;
+}
+
+.form-box .create-account-link {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-popup .signup {
+    display: flex;
+}
+
+.signup .policy-text {
+    display: flex;
+    align-items: center;
+}
+
+.signup .policy-text input {
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+}
+
+/********* ViewPorts *********/
+
+@media (max-width: 950px) {
+
+    /* Navigation Bar */
+    .nav {
+        padding: 15px 0;
+        flex-direction: column;
+    }
+
+    .nav .logo {
+        display: none;
+    }
+    
+    .nav .logo h2 {
+        font-size: 1.4rem;
+    }
+
+    .nav .create-account-link .forgot-pass {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .form-popup {
+        width: 95%;
+    }
+
+    .form-box .form-details {
+        display: none;
+    }
+
+    .form-box .form-content {
+        padding: 30px 20px;
+    }
+}
+
